@@ -18,4 +18,4 @@ const MovieSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('moview',MovieSchema);
+module.exports = mongoose.model('movie',MovieSchema);
