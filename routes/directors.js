@@ -61,7 +61,7 @@ router.get('/:director_id', (req,res) => {
     }).catch((err) => {
         res.json(err);
     })
-})
+});
 
 
 //update direktors
