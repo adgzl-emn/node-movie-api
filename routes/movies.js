@@ -18,7 +18,18 @@ router.get('/top10' ,(req,res) => {
 
 //all get
 router.get('/',(req,res) => {
-    const movies = Movie.find();
+    const movies = Movie.aggregate([
+        {
+            $lookup: {
+                from: 'directors',
+                localField: 'director_id',
+                foreignField: '_id',
+                as: 'directors'
+            }
+        }
+    ]);
+
+
     movies.then(data => {
         res.json(data);
     }).catch(err => {
