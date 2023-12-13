@@ -23,7 +23,7 @@
 
 # Index
 
-| Route | HTTP Verb	 | POST body	 | Description	 |
-| --- | --- | --- | --- |
-| /register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
-| /authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
+| Route         | HTTP Verb	 | POST body	 | Description	 |
+|---------------| --- | --- | --- |
+| /api/register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
+| /api/authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
