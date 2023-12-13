@@ -12,7 +12,7 @@
 
 # Directors
 
-| Route | HTTP Verb	 | POST body	 | Description	 |
+| Route | HTTP Verb	 | POST body    | Description	 |
 | --- | --- | --- | --- |
 | /api/directors | `GET` | Empty | List all directors. |
 | /api/directors | `POST` | { name: 'foo', surname:'bar', bio:'lorem ipsum' } | Create a new director. |
