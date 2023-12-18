@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports = () => {
-    mongoose.connect(''); //
+    mongoose.connect('mongodb+srv://adgzlemn50:YCuvayQZnpbGDuP1@movie-app.mgreoy1.mongodb.net/test?retryWrites=true&w=majority');
 
 
     mongoose.connection.on('open' , () => {
