@@ -110,7 +110,7 @@ router.delete('/delete/:movie_id' ,(req,res,next) => {
     movies.then(data => {
         if (!data)
             next({message: 'Movie Not Found'});
-        res.json({message: "Silindi"});
+        res.json({status: 1});
     }).catch(err => {
         res.status(500).json(err)
     })
